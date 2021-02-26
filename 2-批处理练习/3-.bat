@@ -14,17 +14,17 @@ for %%i in (%var1%) do (
 )
 set ss = []
 for %%i in (%ss%) do (
-    
+
 )
 
 set 1 = vvji
 for %%i in (%1%) do (
-    
+
 )
 
 set =[value1]
 for %%i in (%%) do (
-    
+
 )
 
 set =[value]

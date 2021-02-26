@@ -1,39 +1,14 @@
 @echo off
-cd.>G:\3-BAT脚本\3-输出查看\test.txt
-
-set str=I love,bbs;bathome;cn
-for %%i in (%str%) do (
-    if %%i==cn (
-    echo %%i >G:\3-BAT脚本\3-输出查看\test.txt
-    )
-)
-
-set var1 = [1 2 23 ]
-for %%i in (%var1%) do (
-
-)
-set ss = []
-for %%i in (%ss%) do (
-    
-)
-
-set 1 = vvji
-for %%i in (%1%) do (
-    
-)
-
-set =[value1]
-for %%i in (%%) do (
-    
-)
-
-set =[value]
+find "18" .\a.txt >.\b.txt
+echo %errorlevel% >>.\b.txt
 
 
 
 
-
-
-
-
+::/V         显示所有未包含指定字符串的行
+::/C         仅显示包含字符串的行数
+::/N         显示行号
+::/I         搜索字符串时忽略大小写
+::字符串的行如果找不到，将设 errorlevel返回码为1,否则为0
+find   [搜索的文件路径]
 

@@ -1,12 +1,12 @@
 @echo off
-echo 你他娘的是谁？他娘的我不告诉你。>a.txt
-echo 你他娘的到底是谁？我他娘的还就不告诉那个他娘的你。>>a.txt
-for /f %%i in (a.txt) do (
-set v=%%i
-call echo %%v:他娘的=TMD%%
+set  path1=G:\3-BAT脚本\3-输出查看\b.txt
+set str=c d e f g h i j k l m n o p q r s t u v w x y z
+echo 当前硬盘的分区有：
+for %%i in (%str%) do (
+    if exist %%i: (
+    echo %%i:>>%path1%
+    ) else (
+        echo 3333>>%path1%
+    )
 )
-pause>nul&cls
-for /f %%i in (a.txt) do (
-set v=%%i
-call echo %%v:他娘的=%%
-)
+exit
